@@ -1,0 +1,6 @@
+[package]
+authors = [""]
+compiler_version = "0.6.0"
+
+[dependencies]
+proof_of_intersection = {tag = "v1.0.0", git = "https://github.com/fruity-labs/proof-of-intersection"}

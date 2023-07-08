@@ -8,19 +8,19 @@ A public Noir library repo containing a specific useful Noir functions we've imp
 
 ```toml
 [dependencies]
-proof-of-intersection = {tag = "v1.0.0", git = "https://github.com/fruity-labs/proof-of-intersection"}
+proof_of_intersection = {tag = "v1.0.0", git = "https://github.com/fruity-labs/proof-of-intersection"}
 ```
 
 2. Import the library and function into your Noir code.
 
-Example (taken from proof-of-intersection):
+Partial example (for a fully exhaustive one, see in `./example/`):
 ```rust
 use dep::std;
-use dep::proof-of-intersection;
+use dep::proof_of_intersection;
 
 fn main(){
     // ...
-    let it_s_a_match = proof-of-intersection::private_set_intersection_is_not_empty(commitment_a, commitment_b, priv_set_a, priv_set_b, intersection_is_empty);
+    let it_s_a_match = proof_of_intersection::private_set_intersection_is_not_empty(commitment_a, commitment_b, priv_set_a, priv_set_b, intersection_is_empty);
     std::println(it_s_a_match);
     // ...
 }
